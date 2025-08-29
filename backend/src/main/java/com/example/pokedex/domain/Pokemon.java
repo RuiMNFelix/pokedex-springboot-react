@@ -10,8 +10,9 @@ public class Pokemon {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pokemonId;
     private String name;
-    private int number;
     private String type;
+    private String ability;
+    private String nature;
     private int level;
     private String imageUrl;
 }
