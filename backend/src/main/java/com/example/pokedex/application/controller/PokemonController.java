@@ -1,9 +1,11 @@
 package com.example.pokedex.application.controller;
 
 import com.example.pokedex.application.service.PokemonService;
+import com.example.pokedex.domain.DTO.PokemonListItemDTO;
 import com.example.pokedex.domain.DTO.PokemonListResponseDTO;
 import com.example.pokedex.domain.Pokemon;
 import com.example.pokedex.repository.PokemonRepository;
+import org.hibernate.annotations.IdGeneratorType;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,4 +29,8 @@ public class PokemonController {
         return service.getPokemonList(limit, offset);
     }
 
+    @GetMapping("/{nameOrId}")
+    public PokemonListItemDTO getPokemonByNameOrId(@PathVariable String nameOrId){
+        return service.getPokemonByNameOrId(nameOrId);
+    }
 }
