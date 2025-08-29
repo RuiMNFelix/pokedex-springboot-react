@@ -11,7 +11,7 @@ public class PokemonDetailsDTO {
     private int id;
     private String name;
     @JsonProperty("flavour_text_entries")
-    private FlavorTextEntry description;
+    private PokemonFlavorDescription description;
     private List<AbilitySlot> abilities;
     private List<TypeSlot> types;
     private List<StatSlot> stats;
