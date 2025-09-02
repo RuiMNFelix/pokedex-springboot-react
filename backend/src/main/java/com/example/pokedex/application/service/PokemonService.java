@@ -1,9 +1,9 @@
 package com.example.pokedex.application.service;
 
-import com.example.pokedex.domain.DTO.PokemonDetailsDTO;
-import com.example.pokedex.domain.DTO.PokemonListItemDTO;
-import com.example.pokedex.domain.DTO.PokemonListResponseDTO;
-import com.example.pokedex.domain.DTO.PokemonSpeciesDTO;
+import com.example.pokedex.application.DTO.PokemonDetailsDTO;
+import com.example.pokedex.application.DTO.PokemonListItemDTO;
+import com.example.pokedex.application.DTO.PokemonListResponseDTO;
+import com.example.pokedex.application.DTO.PokemonSpeciesDTO;
 import com.example.pokedex.domain.valueObjects.FlavorTextEntry;
 import com.example.pokedex.domain.valueObjects.PokemonFlavorDescription;
 import org.springframework.stereotype.Service;

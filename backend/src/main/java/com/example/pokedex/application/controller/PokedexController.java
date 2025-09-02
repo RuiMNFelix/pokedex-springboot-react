@@ -1,21 +1,18 @@
 package com.example.pokedex.application.controller;
 
 import com.example.pokedex.application.service.PokemonService;
-import com.example.pokedex.domain.DTO.PokemonDetailsDTO;
-import com.example.pokedex.domain.DTO.PokemonListItemDTO;
-import com.example.pokedex.domain.DTO.PokemonListResponseDTO;
-import com.example.pokedex.repository.PokemonRepository;
+import com.example.pokedex.application.DTO.PokemonDetailsDTO;
+import com.example.pokedex.application.DTO.PokemonListItemDTO;
+import com.example.pokedex.application.DTO.PokemonListResponseDTO;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
 @RequestMapping("/api/pokemon")
-public class PokemonController {
-    private final PokemonRepository repository;
+public class PokedexController {
     private final PokemonService service;
 
-    public PokemonController( PokemonRepository repository, PokemonService service){
-        this.repository = repository;
+    public PokedexController(PokemonService service){
         this.service = service;
     }
 

@@ -1,4 +1,4 @@
-package com.example.pokedex.domain.DTO;
+package com.example.pokedex.application.DTO;
 
 import com.example.pokedex.domain.valueObjects.FlavorTextEntry;
 import com.fasterxml.jackson.annotation.JsonProperty;
