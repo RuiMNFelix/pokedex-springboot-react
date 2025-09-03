@@ -3,16 +3,16 @@ package com.example.pokedex.domain;
 import jakarta.persistence.*;
 import lombok.Data;
 
-@Entity
 @Data
+@Entity
 public class Pokemon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long pokemonId;
+    private int id;
     private String name;
-    private String type;
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
     private String ability;
-    private String nature;
-    private int level;
-    private String imageUrl;
+    @Enumerated(EnumType.STRING)
+    private Nature nature;
 }
