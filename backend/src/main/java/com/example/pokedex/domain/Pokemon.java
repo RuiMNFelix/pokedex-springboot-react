@@ -8,7 +8,7 @@ import lombok.Data;
 public class Pokemon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     private String name;
     @Enumerated(EnumType.STRING)
     private Gender gender;
